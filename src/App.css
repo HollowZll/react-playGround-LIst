@@ -1,0 +1,37 @@
+.Baja {
+   color: greenyellow;
+   font-size: 30px;
+   padding: 10px;
+}
+
+.Baja:hover {
+    cursor: pointer;
+    text-decoration: dashed;
+}
+
+.Media {
+   color: orange;
+   font-size: 30px;
+   padding: 10px; 
+}
+
+.paraAyer {
+   color: red;
+   font-size: 30px;
+   padding: 10px; 
+}
+
+li {
+    list-style: none;
+}
+
+.mainContainer {
+    height: 100vh;
+    width:  100%;
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+

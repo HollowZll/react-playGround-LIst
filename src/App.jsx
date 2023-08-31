@@ -20,9 +20,14 @@ function App() {
   }
 
   function addNewTask (event) {
-    const newTask = {description: text, prioridad: radio, completed: false};
+    const newTask = {id: 1, description: text, prioridad: radio, completed: false};
     setToDoList([...toDoList, newTask]) 
     
+  }
+
+  function bye (event) {
+    listItem = event.target.value;
+    listItem.style.display = 'none'
   }
 
   console.log(toDoList)
@@ -49,11 +54,14 @@ function App() {
 
           <h2>Prioridad:</h2>
           <label htmlFor="Baja">Baja</label>
-          <input type="radio" name="priridad" id="Baja" value="Baja" defaultChecked onChange={radioHandler}/>
+          <input type="radio" name="priridad" id="Baja" value="Baja" className='m-2' defaultChecked onChange={radioHandler}/>
+          <hr className='green'></hr>
           <label htmlFor="Media">Media</label>
-          <input type="radio" name="priridad" id="Media" value="Media" onChange={radioHandler}/>
-          <label htmlFor="paraAyer">Para-Ayer!!!</label>
-          <input type="radio" name="priridad" id="paraAyer" value="paraAyer" onChange={radioHandler}/>
+          <input type="radio" name="priridad" id="Media" value="Media" className='m-2' onChange={radioHandler}/>
+          <hr className='orange'></hr>
+          <label htmlFor="paraAyer">Para-Ayer !</label>
+          <input type="radio" name="priridad" id="paraAyer" value="paraAyer" className='m-2' onChange={radioHandler}/>
+          <hr className='red'></hr>
           
 
           <button onClick={addNewTask }>Guardar</button>

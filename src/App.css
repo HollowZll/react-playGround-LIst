@@ -1,12 +1,27 @@
+.options {
+  padding-top: 100px;
+}
+
 .Baja {
    color: greenyellow;
    font-size: 30px;
    padding: 10px;
 }
 
-.Baja:hover {
+.Baja {
     cursor: pointer;
-    text-decoration: dashed;
+}
+
+.green {
+    border: 2px solid green;
+}
+
+.orange {
+    border: 2px solid orangered;
+}
+
+.red {
+    border: 2px solid maroon;
 }
 
 .Media {
